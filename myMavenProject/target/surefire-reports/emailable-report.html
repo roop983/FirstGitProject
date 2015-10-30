@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">81.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.org.sampleTest.Test1<td><a href="#m1"><b>initTest</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.org.sampleTest.Test1<td><a href="#m2"><b>testLogin</b>  </a></td><td class="numi">1</td><td class="numi">2</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>com.org.sampleTest.Test1:initTest</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+&quot;version&quot;:&quot;10.2.0.187&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;http://firefoxplugin.ff.avast.com/aos/updates.rdf?id=%ITEM_ID%&status=%ITEM_STATUS%&os=%APP_OS%&quot;,&quot;updateKey&quot;:&quot;MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDc6F6CPnst0FEpMpqBguj6WJgVaJXY+5FVWXPVZc2o/tv83KHmeMBjy9z8JCerdDVHCKGOHWRO8XWEpaxhdyfsek3wABigweRHlRFNHZxFhSzqJfIbkNVmfzKF2kPjoi881h0V4EqrnGjSIPjW7E5NPM0UH14hqauQaKH66lK5LQIDAQAB&quot;,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://wrc/content/common/skin/img/icon48.png&quot;,&quot;icon64URL&quot;:&quot;chrome://wrc/content/common/skin/img/icon64.png&quot;,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast Online Security&quot;,&quot;description&quot;:&quot;Avast Browser Security and Web Reputation Plugin. Offering protection against known phishing and malware sites, improving your browsing overall browsing experience with crowd sourced web reputation rating.&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;installDate&quot;:1435776801104,&quot;updateDate&quot;:1435776801104,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:2179131,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;3.0&quot;,&quot;maxVersion&quot;:&quot;25.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1446163906314	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1446163906314	addons.xpi-utils	DEBUG	Updating add-on states
+1446163906319	addons.xpi-utils	DEBUG	Writing add-ons list
+1446163906335	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1446163906338	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.4.0.9058
+1446163906512	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1446163906513	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1446163906513	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1446163906513	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1446163906513	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1446163906514	addons.manager	DEBUG	Starting provider: GMPProvider
+1446163906524	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1446163906525	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1446163906525	addons.manager	DEBUG	Starting provider: PluginProvider
+1446163906525	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1446163906526	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1446163906526	addons.manager	DEBUG	Completed startup sequence
+1446163921257	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1446163921257	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1446163921259	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1446163927171	DeferredSave.extensions.json	DEBUG	Write succeeded
+1446163927172	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1446163927173	DeferredSave.extensions.json	DEBUG	Starting timer
+1446163927198	DeferredSave.extensions.json	DEBUG	Starting write
+1446163927201	addons.repository	DEBUG	No addons.json found.
+1446163927203	DeferredSave.addons.json	DEBUG	Save changes
+1446163927208	DeferredSave.addons.json	DEBUG	Starting timer
+1446163927234	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1446163927235	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1446163927235	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1446163927270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1446163927271	DeferredSave.addons.json	DEBUG	Starting write
+1446163928298	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;BUBU&apos;, ip: &apos;10.0.0.6&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_45&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:135)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at com.org.sampleTest.Test1.initTest(Test1.java:19)
+<br/>35 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+&quot;version&quot;:&quot;10.2.0.187&quot;,&quot;type&quot;:&quot;extension&quot;,&quot;internalName&quot;:null,&quot;updateURL&quot;:&quot;http://firefoxplugin.ff.avast.com/aos/updates.rdf?id=%ITEM_ID%&status=%ITEM_STATUS%&os=%APP_OS%&quot;,&quot;updateKey&quot;:&quot;MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDc6F6CPnst0FEpMpqBguj6WJgVaJXY+5FVWXPVZc2o/tv83KHmeMBjy9z8JCerdDVHCKGOHWRO8XWEpaxhdyfsek3wABigweRHlRFNHZxFhSzqJfIbkNVmfzKF2kPjoi881h0V4EqrnGjSIPjW7E5NPM0UH14hqauQaKH66lK5LQIDAQAB&quot;,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;iconURL&quot;:&quot;chrome://wrc/content/common/skin/img/icon48.png&quot;,&quot;icon64URL&quot;:&quot;chrome://wrc/content/common/skin/img/icon64.png&quot;,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast Online Security&quot;,&quot;description&quot;:&quot;Avast Browser Security and Web Reputation Plugin. Offering protection against known phishing and malware sites, improving your browsing overall browsing experience with crowd sourced web reputation rating.&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\WebRep\\FF&quot;,&quot;installDate&quot;:1435776801104,&quot;updateDate&quot;:1435776801104,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:false,&quot;size&quot;:2179131,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;3.0&quot;,&quot;maxVersion&quot;:&quot;25.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:0}
+1446163906314	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1446163906314	addons.xpi-utils	DEBUG	Updating add-on states
+1446163906319	addons.xpi-utils	DEBUG	Writing add-ons list
+1446163906335	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{82AF8DCA-6DE9-405D-BD5E-43525BDAD38A}.xpi
+1446163906338	addons.xpi	DEBUG	Calling bootstrap method startup on {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} version 7.4.0.9058
+1446163906512	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1446163906513	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1446163906513	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1446163906513	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1446163906513	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1446163906514	addons.manager	DEBUG	Starting provider: GMPProvider
+1446163906524	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1446163906525	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1446163906525	addons.manager	DEBUG	Starting provider: PluginProvider
+1446163906525	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1446163906526	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1446163906526	addons.manager	DEBUG	Completed startup sequence
+1446163921257	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1446163921257	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1446163921259	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1446163927171	DeferredSave.extensions.json	DEBUG	Write succeeded
+1446163927172	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1446163927173	DeferredSave.extensions.json	DEBUG	Starting timer
+1446163927198	DeferredSave.extensions.json	DEBUG	Starting write
+1446163927201	addons.repository	DEBUG	No addons.json found.
+1446163927203	DeferredSave.addons.json	DEBUG	Save changes
+1446163927208	DeferredSave.addons.json	DEBUG	Starting timer
+1446163927234	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1446163927235	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1446163927235	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1446163927270	DeferredSave.extensions.json	DEBUG	Write succeeded
+1446163927271	DeferredSave.addons.json	DEBUG	Starting write
+1446163928298	DeferredSave.addons.json	DEBUG	Write succeeded
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:123)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:216)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+<br/>at com.org.sampleTest.Test1.initTest(Test1.java:19)
+<br/>35 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.org.sampleTest.Test1:testLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
